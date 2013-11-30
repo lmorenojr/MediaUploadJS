@@ -48,15 +48,15 @@ var postendpoint = "http://posttestserver.com/post.php?dir=mediauploadjs";
     }
 
 	function takeImageSnapshotAndUpload() {
-		mediaupload.ImageFromCamera(tvnpostendpoint, null, onCancelledSelection, 	onUploadStarted, onErrorApp, onProgressApp, onFinished);
+		mediaupload.ImageFromCamera(postendpoint, null, onCancelledSelection, 	onUploadStarted, onErrorApp, onProgressApp, onFinished);
 	}
 
 	function takeVideoAndUpload() {
-		mediaupload.VideoFromCamera(tvnpostendpointvideo, null, onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, onFinished);
+		mediaupload.VideoFromCamera(postendpoint, null, onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, onFinished);
 	}
 
 	function getExistingImageAndUpload() {
-		mediaupload.ImageFromGallery(tvnpostendpoint, null,  onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, 
+		mediaupload.ImageFromGallery(postendpoint, null,  onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, 
 	}
 
 ```
