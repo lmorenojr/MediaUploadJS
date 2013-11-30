@@ -9,11 +9,11 @@ MUjs' only dependency is phonegap's js library.
 Support for the Camera API can be verified by platform 
 [here.](http://phonegap.com/about/feature/)
 
-It's also to understand/review the camera api features/limitations for the version and platform you are working on.
+It's also useful to understand/review the camera api features/limitations for the version and platform you are working on.
 Please read [here](http://docs.phonegap.com/en/3.2.0/index.html) also in case of issues.
 
 #Limitations
-Currently only supports one file selection/upload at a time.
+Currently supports only one file selection/upload at a time.
 
 #Usage
 ```javascript
