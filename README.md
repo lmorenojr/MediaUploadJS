@@ -121,7 +121,7 @@ It is called by the library once the upload process has been completed with no e
 
 #License
 
-[MIT}(http://opensource.org/licenses/MIT)
+[MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2013 lmorenojr
 
