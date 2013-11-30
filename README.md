@@ -17,47 +17,47 @@ Currently supports only one file selection/upload at a time.
 
 #Usage
 ```javascript
-		var postendpoint = "http://posttestserver.com/post.php?dir=mediauploadjs";
-       function onCancelledSelection() {
-            alert("The user cancelled selection")
-        }
+var postendpoint = "http://posttestserver.com/post.php?dir=mediauploadjs";
+	function onCancelledSelection() {
+       alert("The user cancelled selection")
+    }
 
-        function onUploadStarted() {
-            //As an example, we display jquery's mobile loading message.
-        	   $.mobile.showPageLoadingMsg();
-        }
+    function onUploadStarted() {
+    	//As an example, we display jquery's mobile loading message.
+    	$.mobile.showPageLoadingMsg();
+    }
 
-        function onErrorApp(error) {
-            //As an example, we remove jquery's mobile loading message.
-      		 $.mobile.hidePageLoadingMsg();
-            if(error !== undefined ){
-                alert("there was an error and we couldnt complete upload = " + error);
-            } else {
-                alert("there was an error and we couldnt complete upload")
-            }
-        }
+    function onErrorApp(error) {
+    	//As an example, we remove jquery's mobile loading message.
+      $.mobile.hidePageLoadingMsg();
+      	if(error !== undefined ){
+      		alert("there was an error and we couldnt complete upload = " + error);
+      	} else {
+      		alert("there was an error and we couldnt complete upload")
+      	}
+    }
 
-        function onProgressApp(percentage) {
-            // ideally used to display some progress indicator to the user, percentage already 
-				// represents X of 100% value.
-        }
+   	 function onProgressApp(percentage) {
+    	// ideally used to display some progress indicator to the user, percentage already 
+	 	// represents X of 100% value.
+    }
 
-        function onFinished() {
-        	$.mobile.hidePageLoadingMsg();
-            alert("Upload Finished.");
-        }
+    function onFinished() {
+     	$.mobile.hidePageLoadingMsg();
+    	alert("Upload Finished.");
+    }
 
-        function takeImageSnapshotAndUpload() {
-            mediaupload.ImageFromCamera(tvnpostendpoint, null, onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, onFinished);
-        }
+	function takeImageSnapshotAndUpload() {
+		mediaupload.ImageFromCamera(tvnpostendpoint, null, onCancelledSelection, 	onUploadStarted, onErrorApp, onProgressApp, onFinished);
+	}
 
-        function takeVideoAndUpload() {
-            mediaupload.VideoFromCamera(tvnpostendpointvideo, null, onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, onFinished);
-        }
+	function takeVideoAndUpload() {
+		mediaupload.VideoFromCamera(tvnpostendpointvideo, null, onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, onFinished);
+	}
 
-        function getExistingImageAndUpload() {
-            mediaupload.ImageFromGallery(tvnpostendpoint, null,  onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, onFinished);
-        }
+	function getExistingImageAndUpload() {
+		mediaupload.ImageFromGallery(tvnpostendpoint, null,  onCancelledSelection, onUploadStarted, onErrorApp, onProgressApp, 
+	}
 
 ```
 
