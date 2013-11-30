@@ -119,6 +119,11 @@ It is called by the library during the upload process, and will indicate the cur
 
 It is called by the library once the upload process has been completed with no errors.
 
+* 	`captureLimit` = expects an Integer value. 
+
+It is used by the library and indicates the maximum duration of the video clip, in seconds.
+
+
 #License
 
 [MIT](http://opensource.org/licenses/MIT)
